@@ -1,0 +1,413 @@
+CANFestival path: /home/user26/CanFestival-3/drivers/can_virtual/libcanfestival_can_virtual.so
+MDESPKSlave_initialisation
+0->[ 1  ]id:02 NODE_GUARD  rtr:0 len:1 00
+MDESPKSlave_preOperational
+MDESPKMaster_initialisation
+1->[ 0  ]id:01 NODE_GUARD  rtr:0 len:1 00
+MDESPKMaster_preOperational
+MDESPKMaster_post_SlaveBootup 2
+Master : ConfigureSlaveNode 02
+Master : set slave 02 TPDO 1 transmit type
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 00 18 02 01 00 00 00
+MDESPKSlave_storeODSubIndex : 1800 02
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 00 18 02 00 00 00 00
+Master : ConfigureSlaveNode 02
+Master : set slave 02 TPDO 2 transmit type
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 01 18 02 01 00 00 00
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 01 18 02 00 00 00 00
+Master : ConfigureSlaveNode 02
+MDESPKMaster_operational
+1->[ 0  ]id:00 NMT  rtr:0 len:2 01 02
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+MDESPKSlave_operational
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 0 0
+MDESPKMaster_post_TPDO MasterSyncCount = 0 
+Master : Ask RTR PDO (0x1402)
+1->[ 0  ]id:01 PDO3rx  rtr:1 len:0
+1->[ 0  ]id:02 PDO4tx  rtr:1 len:0
+Master : Change slave's transmit type to 0xFF
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 02 18 02 ff 00 00 00
+0->[ 1  ]id:01 PDO3rx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO4tx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 02 18 02 00 00 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 1 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 2 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 3 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 4 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 5 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 6 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 7 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 8 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 9 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 10 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 11 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 12 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 13 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 14 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 15 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 16 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 17 
+Master : Ask RTR PDO (0x1402)
+1->[ 0  ]id:01 PDO3rx  rtr:1 len:0
+1->[ 0  ]id:02 PDO4tx  rtr:1 len:0
+0->[ 1  ]id:01 PDO3rx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO4tx  rtr:0 len:2 d2 04
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 18 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 19 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 20 
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 21 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 22 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 23 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 24 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 25 
+Master : Change slave's transmit type to 0x00
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 02 18 02 00 00 00 00
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 02 18 02 00 00 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 26 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 27 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 28 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 29 
+MDESPKMaster_heartbeatError 2
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 30 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 31 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 32 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 33 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 34 
+Master : Ask RTR PDO (0x1402)
+1->[ 0  ]id:01 PDO3rx  rtr:1 len:0
+1->[ 0  ]id:02 PDO4tx  rtr:1 len:0
+0->[ 1  ]id:01 PDO3rx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO4tx  rtr:0 len:2 d2 04
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 35 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 36 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 37 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 38 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 39 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 40 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 41 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 42 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 43 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 44 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 45 
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 46 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 47 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 48 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 49 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 50 
+Master : Change slave's transmit type to 0xFF
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 02 18 02 ff 00 00 00
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 02 18 02 00 00 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 51 
+Master : Ask RTR PDO (0x1402)
+1->[ 0  ]id:01 PDO3rx  rtr:1 len:0
+1->[ 0  ]id:02 PDO4tx  rtr:1 len:0
+0->[ 1  ]id:01 PDO3rx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO4tx  rtr:0 len:2 d2 04
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 52 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 53 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 54 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 55 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 56 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 57 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 58 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 59 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 60 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 61 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 62 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 63 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 64 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 65 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 66 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 67 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 68 
+Master : Ask RTR PDO (0x1402)
+1->[ 0  ]id:01 PDO3rx  rtr:1 len:0
+1->[ 0  ]id:02 PDO4tx  rtr:1 len:0
+0->[ 1  ]id:01 PDO3rx  rtr:0 len:2 d2 04
+0->[ 1  ]id:02 PDO4tx  rtr:0 len:2 d2 04
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 69 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 70 
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 71 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 72 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 73 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 74 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 75 
+Master : Change slave's transmit type to 0x00
+1->[ 0  ]id:02 SDOrx INITIATE_DOWNLOAD_REQUEST  rtr:0 len:8 2f 02 18 02 00 00 00 00
+0->[ 1  ]id:02 PDO3tx  rtr:0 len:2 00 00
+0->[ 1  ]id:02 SDOtx INITIATE_DOWNLOAD_RESPONSE  rtr:0 len:8 60 02 18 02 00 00 00 00
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 76 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 77 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 78 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 79 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 80 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 81 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 82 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 83 
+1->[ 0  ]id:01 EMCY  rtr:0 len:0
+MDESPKMaster_post_sync
+Master: 0 0 0 0 0 0 0 0 0 0 0 1234 1234
+MDESPKMaster_post_TPDO MasterSyncCount = 84 
+Got Signal 2
+1->[ 0  ]id:00 NMT  rtr:0 len:2 81 02
+MDESPKMaster_stopped
+MDESPKSlave_initialisation
+0->[ 1  ]id:02 NODE_GUARD  rtr:0 len:1 00
+MDESPKSlave_preOperational
